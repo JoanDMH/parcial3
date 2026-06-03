@@ -494,7 +494,7 @@ with tab5:
                         width=800, height=450, 
                         background_color='#0f1219', 
                         max_words=80, 
-                        colormap='cyan'
+                        colormap='cool'
                     ).generate(texto)
                     
                     fig_wc, ax = plt.subplots(figsize=(10, 5), facecolor='#0f1219')

@@ -29,7 +29,7 @@ st.set_page_config(
 st.markdown("""
     <style>
     .stApp {
-        background: linear-gradient(135deg, #0a192f 0%, #0f2b48 100%);
+        background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
         color: #e2e8f0;
     }
     h1, h2, h3 {
@@ -38,8 +38,8 @@ st.markdown("""
         font-weight: 700;
     }
     .metric-card {
-        background-color: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.05);
+        background-color: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
         border-left: 5px solid #00f2fe;
         border-radius: 8px;
         padding: 18px;
@@ -492,12 +492,12 @@ with tab5:
                     # Crear WordCloud
                     wc = WordCloud(
                         width=800, height=450, 
-                        background_color='#0a192f', 
+                        background_color='#1e3a8a', 
                         max_words=80, 
                         colormap='cool'
                     ).generate(texto)
                     
-                    fig_wc, ax = plt.subplots(figsize=(10, 5), facecolor='#0a192f')
+                    fig_wc, ax = plt.subplots(figsize=(10, 5), facecolor='#1e3a8a')
                     ax.imshow(wc, interpolation='bilinear')
                     ax.axis('off')
                     plt.tight_layout()

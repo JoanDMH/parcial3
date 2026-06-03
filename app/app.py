@@ -29,7 +29,7 @@ st.set_page_config(
 st.markdown("""
     <style>
     .stApp {
-        background: linear-gradient(135deg, #0f1219 0%, #151922 100%);
+        background: linear-gradient(135deg, #0a192f 0%, #0f2b48 100%);
         color: #e2e8f0;
     }
     h1, h2, h3 {
@@ -492,12 +492,12 @@ with tab5:
                     # Crear WordCloud
                     wc = WordCloud(
                         width=800, height=450, 
-                        background_color='#0f1219', 
+                        background_color='#0a192f', 
                         max_words=80, 
                         colormap='cool'
                     ).generate(texto)
                     
-                    fig_wc, ax = plt.subplots(figsize=(10, 5), facecolor='#0f1219')
+                    fig_wc, ax = plt.subplots(figsize=(10, 5), facecolor='#0a192f')
                     ax.imshow(wc, interpolation='bilinear')
                     ax.axis('off')
                     plt.tight_layout()
